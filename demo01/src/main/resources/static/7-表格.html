@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bootstrap的HTML标准模板</title>
+  <!--载入Bootstrap 的 css-->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+  <!--
+    基础样式
+    1 ) table:基础表格附加样式
+    附加样式
+    1) table-striped:斑马线表格
+    2) table-bordered:带边框的表格
+    3) table-hover:鼠标悬停高亮的表格
+    4) table-condensed:紧凑型表格，单元格没内距或者内距较其他表格的内距小
+  -->
+  <table class="table table-bordered table-hover table-condensed">
+    <tr>
+      <td>123456789</td>
+      <td>123456789</td>
+      <td>123456789</td>
+    </tr>
+
+    <tr>
+      <td>123456789</td>
+      <td>123456789</td>
+      <td>123456789</td>
+    </tr>
+
+    <tr>
+      <td>123456789</td>
+      <td>123456789</td>
+      <td>123456789</td>
+    </tr>
+  </table>
+  <hr>
+  <!--
+      .active将悬停的颜色应用在行或者单元格上
+      .success表示成功的操作
+      .info表示信息变化的操作
+      .warning表示一个警告的操作
+      .danger表示一个危险的操作
+  -->
+  <table class="table table-bordered table-hover ">
+    <tr class="active">
+      <td>123456789</td>
+      <td>123456789</td>
+      <td>123456789</td>
+    </tr>
+
+    <tr class="success">
+      <td>123456789</td>
+      <td>123456789</td>
+      <td>123456789</td>
+    </tr>
+
+    <tr>
+      <td class="info">123456789</td>
+      <td>123456789</td>
+      <td class="info">123456789</td>
+    </tr>
+
+    <tr class="warning">
+      <td>123456789</td>
+      <td>123456789</td>
+      <td>123456789</td>
+    </tr>
+
+    <tr class="danger">
+      <td>123456789</td>
+      <td>123456789</td>
+      <td>123456789</td>
+    </tr>
+  </table>
+</div>
+
+<script src="js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

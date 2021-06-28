@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--使用X-UA-Compatible来设置IE浏览器兼容模式 最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap的HTML标准模板</title>
+    <!--载入Bootstrap 的 css-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <form action="#" class="form-horizontal" role="form">
+        <h3 align="center">用户登录</h3>
+        <!--用户名-->
+        <div class="form-group">
+            <label for="uname" class="control-label col-md-2">用户名：</label>
+            <div class="col-md-8">
+                <input type="text" id="uname" class="form-control" placeholder="请输入用户名"/>
+            </div>
+        </div>
+        <!--密码-->
+        <div class="form-group">
+            <label for="pwd" class="control-label col-md-2">密码：</label>
+            <div class="col-md-8">
+                <input type="password" id="pwd" class="form-control" placeholder="请输入密码"/>
+            </div>
+        </div>
+        <!--备注信息-->
+        <div class="form-group">
+            <label class="control-label col-md-2" for="detail">备注：</label>
+            <div class="col-md-8">
+                <input id="detail" type="text" class="form-control col-md-8" placeholder="请输入备注信息">
+            </div>
+        </div>
+        <!--提交按钮-->
+        <div class="form-group">
+            <div class="col-md-8 col-md-offset-2">
+                <button style="width: 100%" id="submit" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </form>
+    
+</div>
+
+<script src="js/jQuery.js"></script>
+<!--包括bootstrap的js插件或者可以根据需要使用的js插件导入调用-->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script>
+    let i = 1;
+    $('#submit').click(function () {
+        alert('已经提交了表格！' + i + '次');
+        i++;
+    });
+</script>

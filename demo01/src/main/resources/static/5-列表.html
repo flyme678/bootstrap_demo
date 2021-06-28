@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!--使用X-UA-Compatible来设置IE浏览器兼容模式 最新的渲染模式-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bootstrap的HTML标准模板</title>
+  <!--载入Bootstrap 的 css-->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div>
+  <!--垂直无序列表-->
+  <!--class="list-unstyled"-->
+  <ul class="list-unstyled">
+    <li>无序项目列表一</li>
+    <li>无序项目列表二</li>
+  </ul>
+
+  <!--内敛列表  自动去除编号，水平放置-->
+  <ul class="list-inline">
+    <li>首页</li>
+    <li>java学院</li>
+    <li>在线课堂</li>
+  </ul>
+
+  <!--定义列表  class="dl-horizontal"-->
+  <!--
+      在原有的基础加入了一些样式，使用样式 class="dl-horizontal"
+      制作水平定义列表:当标题宽度超过160px时，将会显示三个省略号。
+  -->
+  <dl>
+    <dt>HTML</dt>
+    <dd>超文本标记语言</dd>
+    <dt>Css</dt>
+    <dd>层叠样式表是一种样式表语言</dd>
+  </dl>
+  <dl class="dl-horizontal">
+    <dt>HTML超文本标记语言</dt>
+    <dd>HTML称为超文本标记语言，是一种标识性的语言。</dd>
+    <dt>测试标题不能超过160px的宽度，否则2个点</dt>
+    <dd>我在写一个水平定义列表的效果，我在写一个水平定义列表的效果。</dd>
+  </dl>
+
+
+</div>
+
+
+<!--如果要使用bootstrap的js插件，必须先引入jQuery-->
+<script src="js/jQuery.js"></script>
+<!--包括bootstrap的js插件或者可以根据需要使用的js插件导入调用-->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap的HTML标准模板</title>
+    <!--载入Bootstrap 的 css-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <!--
+        主要是单行文本框，多行文本框，单选框，复选框的使用，
+        文本框: form-control 标准大小；form-control input-lg 大号,form-control input-sm小号；
+
+        1．文本框.form-control 表单元素的样式表单控件的大小.input-lg .input-sm
+        2．下拉框.Form-control表单元素的样式 multiple="multiple”设置下拉框多选
+        3．文本域.form-control 表单元素的样式
+        4．复选框 垂直显示.checkbox  水平显示.checbox-inline
+        5．单选框 垂直显示.radio 水平显示.radio-inline
+    -->
+    <!--文本框-->
+    <div class="row">
+        <!--单行文本框-->
+        <div class="col-md-3">
+            <input type="text" class="form-control"/> <br>
+            <input type="text" class="form-control input-lg"/> <br>
+            <input type="text" class="form-control input-sm"/> <br>
+        </div>
+        <hr>
+        <!--多行文本框-->
+        <textarea class="form-control">
+
+        </textarea>
+    </div>
+    <hr>
+    <!--下拉框-->
+    <div class="row">
+        <div class="col-md-3">
+            <select class="form-control">
+                <option>--请选择--</option>
+                <option>11111</option>
+                <option>22222</option>
+                <option>33333</option>
+                <option>44444</option>
+            </select>
+            <hr>
+
+            <select class="form-control input-lg">
+                <option>--请选择--</option>
+                <option>11111</option>
+                <option>22222</option>
+                <option>33333</option>
+                <option>44444</option>
+            </select>
+            <hr>
+
+            <select class="form-control input-sm">
+                <option>--请选择--</option>
+                <option>11111</option>
+                <option>22222</option>
+                <option>33333</option>
+                <option>44444</option>
+            </select>
+        </div>
+    </div>
+    <hr>
+    <!--多选框-->
+    <div class="row">
+        <div class="col-md-3">
+            <select class="form-control" multiple="multiple">
+                <option>--请选择--</option>
+                <option>11111</option>
+                <option>22222</option>
+                <option>33333</option>
+                <option>44444</option>
+            </select>
+            <hr>
+
+            <select class="form-control input-lg" multiple="multiple">
+                <option>--请选择--</option>
+                <option>11111</option>
+                <option>22222</option>
+                <option>33333</option>
+                <option>44444</option>
+            </select>
+            <hr>
+
+            <select class="form-control input-sm" multiple="multiple">
+                <option>--请选择--</option>
+                <option>11111</option>
+                <option>22222</option>
+                <option>33333</option>
+                <option>44444</option>
+            </select>
+        </div>
+    </div>
+
+    <!--checkbox复选框-->
+    <div class="col-md-6">
+        <!--垂直显示-->
+        <div class="checkbox">
+            <div class="checkbox">
+                <label><input type="checkbox" name="hobby">唱歌</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="hobby">跳舞</label>
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="hobby">篮球</label>
+            </div>
+            <div>
+                <label><input type="checkbox" name="hobby">烹饪</label>
+            </div>
+        </div>
+        <hr>
+        <!--水平显示显示-->
+        <div class="checkbox">
+            <label class="checkbox-inline"><input type="checkbox" name="hobby">唱歌</label>
+            <label class="checkbox-inline"><input type="checkbox" name="hobby">跳舞</label>
+            <label class="checkbox-inline"><input type="checkbox" name="hobby">篮球</label>
+            <label class="checkbox-inline"><input type="checkbox" name="hobby">烹饪</label>
+        </div>
+    </div>
+
+    <!--单选框-->
+    <div class="col-md-6">
+        <!--垂直显示-->
+        <div class="checkbox1">
+            <div class="radio">
+                <label><input type="radio" name="hobby1">汉族</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="hobby1">回族</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="hobby1">彝族</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="hobby1">藏族</label>
+            </div>
+        </div>
+        <hr>
+        <!--水平显示显示  name相同会被认为是同一个单选群-->
+        <div class="checkbox2">
+            <label class="radio-inline"><input type="radio" name="hobby2">汉族</label>
+            <label class="radio-inline"><input type="radio" name="hobby2">回族</label>
+            <label class="radio-inline"><input type="radio" name="hobby2">彝族</label>
+            <label class="radio-inline"><input type="radio" name="hobby2">藏族</label>
+        </div>
+    </div>
+
+</div>
+
+<script src="js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

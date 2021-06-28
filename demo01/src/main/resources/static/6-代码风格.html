@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--使用X-UA-Compatible来设置IE浏览器兼容模式 最新的渲染模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap的HTML标准模板</title>
+    <!--载入Bootstrap 的 css-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!--
+    一般在个人博客 上使用的较为频繁,用于显示代码的风格。在Bootstrap主要提供了三种代码风格:
+    (1)使用<code></code>来显示单行内联代码
+    (2)使用<pre></pre> 来显示多行块代码
+    样式: pre-scrollable (height,max-height高度固定,为340px,超过存在滚动条)
+    (3)使用<kbd> </kbd>来显示用户输入代码，如快捷键
+-->
+<!--单行内联代码-->
+<code>List&lt;AbstractOperationRecordModel&gt; aorm = null;</code>
+
+<!--快捷键-->
+<p>使用<kbd>ctr1</kbd>+<kbd>s</kbd>保存</p>
+
+<!--多行块代码-->
+<!--代码会保留原本的格式，包括空格和换行-->
+<pre>
+for (QuoteModel quote:quoteList){
+            aorm = operationRecordDao.findParams(quote,null,LogisticsQuotationRecordModel._TYPECODE);
+            if (DateUtil.daysOfDiff2(new Date(),aorm.get(0).getDate()) > configValue){
+                overDaysList.add(quote.getQuoteCode());
+            }
+        }
+</pre>
+
+<!--当长度超过指定值，可以添加滚动条  需要添加 class="pre-scrollable"-->
+<pre class="pre-scrollable">
+<ol>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+    <li>...........</li>
+</ol>
+</pre>
+
+<!--如果要使用bootstrap的js插件，必须先引入jQuery-->
+<script src="js/jQuery.js"></script>
+<!--包括bootstrap的js插件或者可以根据需要使用的js插件导入调用-->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

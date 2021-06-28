@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>栅格网格系统</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" >
+</head>
+<body>
+<div class="container">
+
+  <!--
+      特点：
+          1.列组合 列总数不能超过12，超过12则自动换到下一行
+          2.列偏移  列左侧留空白，但仍然不能超过12
+          3.列排序  col-md-push-3  当前块向右移个3单位，col-md-pull-2  当前块向右移2个单位，但是不影响后面块的位置，自带清楚浮动效果
+          4.列嵌套  分割的列还可以再嵌套细分为12等分（也可以无限套娃）
+  -->
+  <!--一行平分为三分-->
+  <div class="row">
+    <div class="col-md-4" style="background-color: #31b0d5">4</div>
+    <div class="col-md-4" style="background-color: #eb9316">4</div>
+    <div class="col-md-4" style="background-color: #d9534f">4</div>
+  </div><hr>
+  <!--一行平分为4分-->
+  <div class="row">
+    <div class="col-md-2" style="background-color: #31b0d5">4</div>
+    <div class="col-md-3" style="background-color: #eb9316">4</div>
+    <div class="col-md-2" style="background-color: #31b0d5">4</div>
+    <div class="col-md-5" style="background-color: #d9534f">4</div>
+  </div><hr>
+
+  <!--列偏移-->
+  <div class="row">
+    <div class="col-md-2" style="background-color: #31b0d5">我占了2个单位</div>
+    <!--追加col-md-offset-2  实现向右偏移-->
+    <div class="col-md-3 col-md-offset-7" style="background-color: #eb9316">我宽3单位，偏移了7个单位</div>
+  </div><hr>
+  <!--列排序-->
+  <div class="row">
+    <!--对块的操作不会对其他元素造成影响-->
+    <div class="col-md-2 col-md-push-4" style="background-color: #28a4c9">1我占了2个单位</div>
+    <div class="col-md-2" style="background-color: #ebccd1">2我占了2个单位</div>
+    <div class="col-md-2 col-md-pull-4" style="background-color: #4cae4c">3我占了2个单位</div>
+    <div class="col-md-6" style="background-color: #eea236">4我占了6个单位</div>
+  </div><hr>
+
+  <!--列嵌套-->
+  <div class="row">
+    <div class="col-md-6" style="background-color: #28a4c9">
+      <div class="row">
+        <div class="col-md-6" style="background-color: #eea236">
+          <div class="row">
+            <div class="col-md-6" style="background-color: #2b542c">
+              <div class="row">
+                <div class="col-md-4" style="background-color: #ebccd1">1/3</div>
+                <div class="col-md-4" style="background-color: #c4e3f3">1/3</div>
+                <div class="col-md-4" style="background-color: #31708f">1/3</div>
+              </div>
+            </div>
+            <div class="col-md-6" style="background-color: #b2dba1">占1.5块</div>
+          </div>
+        </div>
+        <div class="col-md-6" style="background-color: #d6e9c6">占3块</div>
+      </div>
+    </div>
+
+    <div class="col-md-6" style="background-color: blue">占6块</div>
+  </div>
+
+</div>
+
+<script src="js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
