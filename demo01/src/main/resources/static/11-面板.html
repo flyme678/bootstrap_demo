@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap的HTML标准模板</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!--
+      默认的.panel组件所做的只是设置基本的边框 (border）和内补(padding）来包含内容。
+      .panel-default:默认样式
+      .panel-heading:面板头.panel-body:面板主体内容
+-->
+<!--  基本格式：
+<div class="panel panel-success">
+    <div class="panel-heading">
+    </div>
+    <div class="panel-body">
+    </div>
+</div>
+-->
+
+<!--案例-->
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        <h3 align="center">冰冰合集</h3>
+    </div>
+    <div class="panel-body">
+        <!--缩略图1-->
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="img/wbb.png" style="width: 240px;height: 360px;">
+                <h3>王冰冰</h3>
+                <p>出生于北京市，中国内地影视女演员、模特。</p>
+                <button class="btn btn-default">
+                    <span class="glyphicon glyphicon-heart"></span>喜欢
+                </button>
+                <button class="btn btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>评论
+                </button>
+            </div>
+        </div>
+        <!--缩略图2-->
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="img/wbb1.png" style="width: 240px;height: 360px;">
+                <h3>王冰冰</h3>
+                <p>出生于北京市，中国内地影视女演员、模特。</p>
+                <button class="btn btn-default">
+                    <span class="glyphicon glyphicon-heart"></span>喜欢
+                </button>
+                <button class="btn btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>评论
+                </button>
+            </div>
+        </div>
+        <!--缩略图3-->
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="img/wbb2.png" style="width: 240px;height: 360px;">
+                <h3>王冰冰</h3>
+                <p>出生于北京市，中国内地影视女演员、模特。</p>
+                <button class="btn btn-default">
+                    <span class="glyphicon glyphicon-heart"></span>喜欢
+                </button>
+                <button class="btn btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>评论
+                </button>
+            </div>
+        </div>
+        <!--缩略图4-->
+        <div class="col-md-3">
+            <div class="thumbnail">
+                <img src="img/wbb3.png" style="width: 240px;height: 360px;">
+                <h3>王冰冰</h3>
+                <p>出生于北京市，中国内地知名记者。</p>
+                <button class="btn btn-default">
+                    <!--改变样式，卸载span标签内-->
+                    <span class="glyphicon glyphicon-heart"></span>喜欢
+                </button>
+                <button class="btn btn-info">
+                    <span class="glyphicon glyphicon-pencil"></span>评论
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

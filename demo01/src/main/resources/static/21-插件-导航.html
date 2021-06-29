@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap的HTML标准模板</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<!--导航栏 主要内容：
+
+    1、基本样式: .nav 与“nav-tabs”、“nav-pi11s”组合制作导航
+    2、分类:
+        1)、标签型(nav-tabs)导航
+        2)、胶囊形(nav-pills)导航
+        3)、堆栈(nav-stacked)导航
+        4)、自适应(nav-justified)导航
+        5)、面包屑式(breadcrumb)导航，单独使用样式，不与nav一起使用,直接加入到ol、ul中即可，一般用于导航，主要是起的作用是告诉用户现在所处页面的位置（当前位置)
+    3、状态:
+        1)、选中状态active 样式
+        2)、禁用状态: disable
+    4、二级菜单
+</div>
+-->
+<!--标签式导航-->
+<p>标签式的导航菜单</p>
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">SVN</a></li>
+    <li><a href="#">iOS</a></li>
+    <li><a href="#">VB.Net</a></li>
+    <li><a href="#">Java</a></li>
+    <li><a href="#">PHP</a></li>
+</ul>
+<br>
+
+<!--水平胶囊型导航-->
+
+<p>基本的胶囊式导航菜单</p>
+<ul class="nav nav-pills">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">SVN</a></li>
+    <li><a href="#">iOS</a></li>
+    <li><a href="#">VB.Net</a></li>
+    <li><a href="#">Java</a></li>
+    <li><a href="#">PHP</a></li>
+</ul>
+<br>
+
+<!--垂直胶囊型导航-->
+<p>基本的胶囊式导航菜单</p>
+<ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">SVN</a></li>
+    <li><a href="#">iOS</a></li>
+    <li><a href="#">VB.Net</a></li>
+    <li><a href="#">Java</a></li>
+    <li><a href="#">PHP</a></li>
+</ul>
+<br>
+<!--两端对齐的导航栏-->
+<p>两端对齐的导航元素</p>
+<ul class="nav nav-pills nav-justified">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">SVN</a></li>
+    <li class="disabled"><a href="#">禁用链接</a></li>
+    <li><a href="#">VB.Net</a></li>
+    <li><a href="#">Java</a></li>
+    <li><a href="#">PHP</a></li>
+</ul><br><br><br>
+
+<!--带有下拉菜单的导航栏-->
+<p>两端对齐的导航元素</p>
+<ul class="nav nav-pills nav-justified">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">SVN</a></li>
+    <li class="disabled"><a href="#">禁用链接</a></li>
+    <li><a href="#">VB.Net</a></li>
+    <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Java学习之路<span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">jdbc数据库底层原理</a></li>
+            <li><a href="#">mysql数据库</a></li>
+            <li><a href="#">oracle数据库一本通</a></li>
+            <li class="divider"></li>
+            <li><a href="#">项目实战</a></li>
+        </ul>
+    </li>
+    <li><a href="#">PHP</a></li>
+</ul><br><br><br>
+
+<!--面包屑导航-->
+<!--两端对齐的导航栏-->
+<p>两端对齐的导航元素</p>
+<ul class="breadcrumb">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">SVN</a></li>
+    <li><a href="#">VB.Net</a></li>
+</ul><br><br><br>
+
+<!--分页导航-->
+<p>分页导航</p>
+<ul class="pagination">
+    <li class="active"><a href="#">&laquo;</a></li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><a href="#">&raquo;</a></li>
+</ul><br><br><br>
+
+<!--手动上一页，下一页-->
+<p>手动上一页，下一页</p>
+<ul class="pager">
+    <li ><a href="#">上一页</a></li>
+    <li><a href="#">下一页</a></li>
+</ul><br><br><br>
+<script src="js/jQuery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
